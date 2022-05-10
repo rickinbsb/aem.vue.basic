@@ -13,6 +13,9 @@
 import axios from 'axios'
 
 export default {
+  props: {
+    apiKey: { type: String, default: '' }
+  },
   data () {
     return {
       city: '',
@@ -30,7 +33,7 @@ export default {
             params: {
               lat: position.coords.latitude.toString(),
               lon: position.coords.longitude.toString(),
-              appid: '103de2c7d6b22b080dd1844c079b8858',
+              appid: this.apiKey,
               units: 'metric',
               lang: 'pt_br'
             }

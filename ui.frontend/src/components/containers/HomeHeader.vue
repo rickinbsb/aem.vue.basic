@@ -2,7 +2,7 @@
   <header>
     <brand-logo :image-path="imagePath" :home-path="homePath" />
     <clock :time-format="timeFormat" :date-format="dateFormat" />
-    <weather />
+    <weather :api-key="apiKey" />
   </header>
 </template>
 <script>
@@ -19,6 +19,7 @@ export default {
   props: {
     imagePath: { type: String, default: '#' },
     homePath: { type: String, default: '#' },
+    apiKey: { type: String, default: '' },
     timeFormat: { type: String, default: 'HH:mm' },
     dateFormat: { type: String, default: 'dddd, LL' }
   }
