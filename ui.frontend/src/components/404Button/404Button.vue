@@ -11,7 +11,8 @@ export default {
   },
   methods: {
     goToHome () {
-      this.$router.push(this.url)
+      // this.$router.push(this.url + '.html')
+      window.location = this.url + '.html'
     }
   }
 }
@@ -33,7 +34,6 @@ button.btn {
 
   &:hover {
     background-color: #777;
-    transition: background-color 0.1s ease-in;
   }
 
   &:active {
