@@ -30,6 +30,12 @@
                         value="HH:mm"
                         required="true"
                         name="./timeFormat" />
+                    <api-key jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Open Weather API Key (https://home.openweathermap.org/api_keys)"
+                        value=""
+                        required="true"
+                        name="./apiKey" />
                     <date-format jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="datetime format string (https://momentjs.com/docs/#/displaying/format/)"
