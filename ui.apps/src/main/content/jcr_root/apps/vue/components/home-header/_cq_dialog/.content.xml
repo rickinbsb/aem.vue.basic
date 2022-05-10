@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <image-path jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Path to logo"
+                        value="#"
+                        required="true"
+                        name="./imagePath" />
+                    <home-path jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/gui/components/coral/common/form/pagefield"
+                        cq-msm-lockable="./url"
+                        rootPath="/content"
+                        fieldLabel="Homepage page"
+                        name="./homePath" />
+                    <time-format jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="clock format string (https://momentjs.com/docs/#/displaying/format/)"
+                        value="HH:mm"
+                        required="true"
+                        name="./timeFormat" />
+                    <date-format jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="datetime format string (https://momentjs.com/docs/#/displaying/format/)"
+                        value="dddd, LL"
+                        required="true"
+                        name="./dateFormat" />
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

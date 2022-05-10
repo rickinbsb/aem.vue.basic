@@ -4,6 +4,19 @@ import AppPage from './components/Page/AppPage'
 import CheckBox from './components/Checkbox/Checkbox'
 import Header from './components/Header/Header'
 import Image from './components/Image/Image'
+import NotFoundButton from './components/404Button/404Button'
+import NotFoundFooter from './components/404Footer/404Footer'
+import NotFoundHeader from './components/404Header/404Header'
+import NotFoundText from './components/404Text/404Text'
+import NotFoundTitle from './components/404Title/404Title'
+import NotFoundContainer from './components/404Container/404Container'
+
+import HomeHeader from './components/containers/HomeHeader'
+import HomeContainer from './components/containers/HomeContainer'
+import HomeFooter from './components/containers/HomeFooter'
+
+import LoginContainer from './components/containers/LoginContainer'
+
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -61,3 +74,19 @@ MapTo('vue/components/container')(
     }
   }
 )
+
+// 404 Page Components Mapping
+MapTo('vue/components/404-button')(NotFoundButton)
+MapTo('vue/components/404-footer')(NotFoundFooter)
+MapTo('vue/components/404-header')(NotFoundHeader)
+MapTo('vue/components/404-text')(NotFoundText)
+MapTo('vue/components/404-title')(NotFoundTitle)
+MapTo('vue/components/404-container')(NotFoundContainer)
+
+// Home Page Components Mapping
+MapTo('vue/components/home-header')(HomeHeader)
+MapTo('vue/components/home-container')(HomeContainer)
+MapTo('vue/components/home-footer')(HomeFooter)
+
+// Login Page Components Mapping
+MapTo('vue/components/login-container')(LoginContainer)
